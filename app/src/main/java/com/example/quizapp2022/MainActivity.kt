@@ -19,7 +19,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var trueButton: Button
     lateinit var falseButton: Button
     lateinit var question: TextView
+    lateinit var textView_score: TextView
     var solution = false
+    lateinit var questionList: List<Question>
+    var score = 0
+    var count = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +31,8 @@ class MainActivity : AppCompatActivity() {
         loadQuestions()
         wireWidgets()
         //get the first question, set up the textviews
-
+        val scoreText = getString(R.string.main_score)
+        textView_score.text = "SCore: $<quiz.score"
         trueButton.setOnClickListener{
             solution = true
         }
@@ -42,9 +47,11 @@ class MainActivity : AppCompatActivity() {
         trueButton = findViewById(R.id.button_main_true)
         falseButton = findViewById(R.id.button_main_false)
         question = findViewById(R.id.textView_main_question)
+        textView_score = findViewById(R.id.textView_main_score)
     }
 
     private fun loadQuestions() {
+        /*
         val inputStream = resources.openRawResource(R.raw.questions)
         val jsonString = inputStream.bufferedReader().use{
             it.readText()
@@ -57,7 +64,12 @@ class MainActivity : AppCompatActivity() {
         val questions = gson.fromJson<List<Question>>(jsonString, type)
 
         //create the quiz object from the list of questions
-        quiz = Quiz(questions)
+        quiz = Quiz(questions)*/
+        if(count < questionList.size)
+        {
+            question.text = questionList(count).getQuestion()
+
+        }
     }
 
 
