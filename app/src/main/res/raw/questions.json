@@ -1,0 +1,63 @@
+[
+  {
+    "question" :"Peanuts are not nuts!",
+    "answer": true
+  },
+  {
+    "question": "Sharks are mammals.",
+    "answer": false
+  },
+  {
+    "question": "SBats are blind.",
+    "answer": false
+  },
+  {
+    "question": "An ant can lift 1000 times its weight.",
+    "answer": false
+  },
+  {
+    "question": "Galapagos tortoises sleep up to 16 hours a day",
+    "answer": true
+  },
+  {
+    "question": "The letter H is between letters G and J on a keyboard",
+    "answer": true
+  },
+  {
+    "question": "If you add the two numbers on the opposite side of dice together, the answer is always 7",
+    "answer": true
+  },
+  {
+    "question": "New York is nicknamed “The Big Orange”",
+    "answer": false
+  },
+  {
+    "question": "The moon is just 50 percent of the mass of Earth.",
+    "answer": false
+  },
+  {
+    "question": "You can sneeze during sleep.",
+    "answer": false
+  },
+  {
+    "question": "There is a world championship for throwing mobile phones.",
+    "answer": true
+  },
+  {
+    "question": "A double rainbow is a mirror image of the first rainbow",
+    "answer": true
+  },
+  {
+    "question": "Penguins propose to each other with singing",
+    "answer": false
+  },
+  {
+    "question": "When we breathe through our nose, we always inhale more air from one nostril than with the other one - and theis changes every 15 minutes",
+    "answer": true
+  },
+  {
+    "question": "Honey has an expiry date",
+    "answer": false
+  },
+
+]
